@@ -3,3 +3,162 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* The Header Section */
+
+header {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav > ul {
+  display: flex;
+  float: left;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li a {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav > ul > li a:hover,
+nav > ul > li a.active {
+  background: red;
+}
+
+/* The Aside Section */
+
+aside {
+  grid-area: right;
+  max-width: 200px;
+  min-width: 100px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+aside > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+aside a {
+  padding: 20px;
+  color: white;
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+aside a:hover {
+  background-color: white;
+  color: blue;
+}
+
+/* The Main Section */
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+}
+
+.content {
+  grid-area: left;
+}
+
+section {
+  margin: 10px 20px;
+  padding: 10px;
+  border: 1px solid black;
+  max-width: 600px;
+  min-width: 200px;
+  height: 300px;
+  background-color: #e0e0e0;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+p {
+  padding-top: 5px;
+}
+
+/* The many colors */
+.text-red {
+  color: red;
+}
+.back-red {
+  background-color: red;
+}
+.text-blue {
+  color: blue;
+}
+.back-blue {
+  background-color: blue;
+}
+.text-yellow {
+  color: yellow;
+}
+.back-yellow {
+  background-color: yellow;
+}
+.text-green {
+  color: green;
+}
+.back-green {
+  background-color: green;
+}
+.text-purple {
+  color: purple;
+}
+.back-purple {
+  background-color: purple;
+}
+.text-white {
+  color: white;
+}
+.back-white {
+  background-color: white;
+}
+.text-black {
+  color: black;
+}
+.back-black {
+  background-color: black;
+}
+
+/* The Footer Section */
+
+footer {
+  /* position: absolute; */
+  clear: both;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  width: 100%;
+}

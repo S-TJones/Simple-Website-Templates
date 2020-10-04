@@ -3,3 +3,130 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* The Header Section */
+
+header {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#logo {
+  margin: 0px 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+nav > ul {
+  display: flex;
+  float: left;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li a {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav > ul > li a:hover,
+nav > ul > li a.active {
+  background: red;
+}
+
+/* The Main Section */
+
+main {
+  margin-top: 50px;
+  width: 100%;
+  display: inline-block;
+}
+
+section {
+  margin: 10px 20px;
+  padding: 10px;
+  border: 1px solid black;
+  width: 600px;
+  height: 300px;
+  background-color: #e0e0e0;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+/* The many colors */
+.text-red {
+  color: red;
+}
+.back-red {
+  background-color: red;
+}
+.text-blue {
+  color: blue;
+}
+.back-blue {
+  background-color: blue;
+}
+.text-yellow {
+  color: yellow;
+}
+.back-yellow {
+  background-color: yellow;
+}
+.text-green {
+  color: green;
+}
+.back-green {
+  background-color: green;
+}
+.text-purple {
+  color: purple;
+}
+.back-purple {
+  background-color: purple;
+}
+.text-white {
+  color: white;
+}
+.back-white {
+  background-color: white;
+}
+.text-black {
+  color: black;
+}
+.back-black {
+  background-color: black;
+}
+
+/* The Footer Section */
+
+footer {
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
